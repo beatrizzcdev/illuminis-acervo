@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Illuminis - Acervos</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+    <header class="topo">
+
+        <div class="logo">
+            <i class="fa-solid fa-book-open"></i>
+            <span>Illuminis</span>
+        </div>
+
+        <nav class="menu-principal">
+            <a href="#">Meus Livros</a>
+            <a href="#" class="ativo">Acervos</a>
+            <a href="#">Em Alta</a>
+            <a href="#">Resenhas</a>
+        </nav>
+
+        <div class="acoes-topo">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-bell"></i>
+            <i class="fa-solid fa-circle-user"></i>
+        </div>
+
+    </header>
+    <div class="layout">
+        <aside class="sidebar">
+
+            <div class="perfil">
+                <div class="avatar">
+                    <i class="fa-solid fa-house"></i>
+                </div>
+
+                <div>
+                    <strong>Illuminis</strong>
+                    <span>Leituras que inspiram</span>
+                </div>
+
+                <i class="fa-solid fa-pen"></i>
+            </div>
+
+
+            <nav class="menu-lateral">
+
+                <a href="#">
+                    <i class="fa-solid fa-book-open"></i>
+                    <span>Meus Livros</span>
+                </a>
+
+                <a href="#">
+                    <i class="fa-solid fa-book"></i>
+                    <span>Minha estante</span>
+                </a>
+
+                <a href="#">
+                    <i class="fa-regular fa-heart"></i>
+                    <span>Favoritos</span>
+                </a>
+
+                <a href="#" class="selecionado">
+                    <i class="fa-solid fa-book-open"></i>
+                    <span>Acervos</span>
+                </a>
+
+                <a href="#">
+                    <i class="fa-solid fa-fire"></i>
+                    <span>Em Alta</span>
+                </a>
+
+                <a href="#">
+                    <i class="fa-regular fa-comment"></i>
+                    <span>Resenhas</span>
+                </a>
+
+                <a href="#">
+                    <i class="fa-solid fa-gear"></i>
+                    <span>Configurações</span>
+                </a>
+
+            </nav>
+
+
+            <div class="frase">
+
+                <div class="livros-decoracao">
+                    <i class="fa-solid fa-book"></i>
+                    <i class="fa-solid fa-book"></i>
+                    <i class="fa-solid fa-book"></i>
+                </div>
+
+                <p>
+                    “Livros são sonhos que seguramos
+                    com as mãos.”
+                </p>
+
+            </div>
+
+        </aside>
+        <main class="conteudo">
+            <section class="banner">
+
+                <div>
+                    <h1>Acervos</h1>
+
+                    <h2>
+                        Explore um mundo de histórias.
+                    </h2>
+
+                    <p>
+                        Descubra novos autores, gêneros e muito mais.
+                    </p>
+                </div>
+
+                <div class="banner-frase">
+                    <p>Grandes<br>histórias<br>te esperam!</p>
+                    <span>♥</span>
+                </div>
+
+            </section>
+            <section class="pesquisa">
+
+                <div class="campo-pesquisa">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                    <input
+                        type="text"
+                        placeholder="Buscar por título, autor ou gênero..."
+                    >
+                </div>
+
+                <button class="botao-filtro">
+                    <i class="fa-solid fa-sliders"></i>
+                    Filtros
+                </button>
+
+                <button class="ordenar">
+                    Ordenar por: <strong>Mais populares</strong>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+
+            </section>
+            <nav class="generos">
+
+                <a class="genero ativo">Todos</a>
+                <a class="genero">Ficção</a>
+                <a class="genero">Romance</a>
+                <a class="genero">Suspense</a>
+                <a class="genero">Terror</a>
+                <a class="genero">Fantasia</a>
+                <a class="genero">Aventura</a>
+                <a class="genero">Drama</a>
+                <a class="genero">Clássicos</a>
+                <a class="genero">Não ficção</a>
+
+            </nav>
+            <section class="area-livros">
+                <aside class="filtros">
+
+                    <div class="titulo-filtro">
+                        <i class="fa-solid fa-filter"></i>
+                        <strong>Filtros</strong>
+                        <span>×</span>
+                    </div>
+
+
+                    <div class="grupo-filtro">
+
+                        <h3>Gênero</h3>
+
+                        <label>
+                            <input type="checkbox">
+                            Ficção
+                            <span>(842)</span>
+                        </label>
+
+                        <label>
+                            <input type="checkbox">
+                            Romance
+                            <span>(623)</span>
+                        </label>
+
+                        <label>
+                            <input type="checkbox">
+                            Suspense
+                            <span>(412)</span>
+                        </label>
+
+                        <label>
+                            <input type="checkbox">
+                            Terror
+                            <span>(298)</span>
+                        </label>
+
+                        <label>
+                            <input type="checkbox">
+                            Fantasia
+                            <span>(276)</span>
+                        </label>
+
+                        <label>
+                            <input type="checkbox">
+                            Aventura
+                            <span>(231)</span>
+                        </label>
+
+                        <label>
+                            <input type="checkbox">
+                            Drama
+                            <span>(198)</span>
+                        </label>
+
+                        <label>
+                            <input type="checkbox">
+                            Clássicos
+                            <span>(167)</span>
+                        </label>
+
+                        <label>
+                            <input type="checkbox">
+                            Não ficção
+                            <span>(143)</span>
+                        </label>
+
+                    </div>
+
+
+                    <div class="grupo-filtro">
+
+                        <h3>Autor</h3>
+
+                        <select>
+                            <option>Selecione um autor</option>
+                            <option>Colleen Hoover</option>
+                            <option>Machado de Assis</option>
+                            <option>George Orwell</option>
+                        </select>
+
+                    </div>
+
+
+                    <div class="grupo-filtro">
+
+                        <h3>Ano de publicação</h3>
+
+                        <label>
+                            <input type="checkbox">
+                            2025
+                            <span>(48)</span>
+                        </label>
+
+                        <label>
+                            <input type="checkbox">
+                            2020 - 2024
+                            <span>(312)</span>
+                        </label>
+
+                        <label>
+                            <input type="checkbox">
+                            2015 - 2019
+                            <span>(427)</span>
+                        </label>
+
+                        <label>
+                            <input type="checkbox">
+                            2010 - 2014
+                            <span>(386)</span>
+                        </label>
+
+                        <label>
+                            <input type="checkbox">
+                            Antes de 2010
+                            <span>(298)</span>
+                        </label>
+
+                    </div>
+
+
+                    <div class="grupo-filtro">
+
+                        <h3>Avaliação</h3>
+
+                        <label>
+                            <input type="checkbox">
+                            5 estrelas
+                        </label>
+
+                        <label>
+                            <input type="checkbox">
+                            4 e 5 estrelas
+                        </label>
+
+                        <label>
+                            <input type="checkbox">
+                            3 e 4 estrelas
+                        </label>
+
+                        <label>
+                            <input type="checkbox">
+                            Menos de 3 estrelas
+                        </label>
+
+                    </div>
+
+
+                    <button class="aplicar">
+                        Aplicar filtros
+                    </button>
+
+                    <button class="limpar">
+                        Limpar filtros
+                    </button>
+
+                </aside>
+                <div class="catalogo">
+
+                    <div class="cabecalho-catalogo">
+
+                        <strong>1.248 livros encontrados</strong>
+
+                        <div class="paginas">
+                            <span>‹</span>
+                            <strong>1</strong>
+                            <span>2</span>
+                            <span>3</span>
+                            <span>4</span>
+                            <span>5</span>
+                            <span>...</span>
+                            <span>›</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="livros">
+                        <article class="livro">
+                            <div class="capa capa-verde">
+                                É ASSIM<br>
+                                QUE<br>
+                                COMEÇA
+                            </div>
+
+                            <button class="favorito">
+                                ♡
+                            </button>
+
+                            <h3>É assim que começa</h3>
+                            <p class="autor">Colleen Hoover</p>
+
+                            <div class="avaliacao">
+                                ★ 4.8 <span>(32.4k)</span>
+                            </div>
+
+                            <span class="tag">Romance</span>
+
+                        </article>
+
+
+                        <!-- LIVRO 2 -->
+                        <article class="livro">
+
+                            <div class="capa capa-azul">
+                                O Pequeno<br>
+                                Príncipe
+                            </div>
+
+                            <button class="favorito">
+                                ♡
+                            </button>
+
+                            <h3>O Pequeno Príncipe</h3>
+                            <p class="autor">Antoine de Saint-Exupéry</p>
+
+                            <div class="avaliacao">
+                                ★ 4.7 <span>(21.6k)</span>
+                            </div>
+
+                            <span class="tag">Ficção</span>
+
+                        </article>
+
+
+                        <!-- LIVRO 3 -->
+                        <article class="livro">
+
+                            <div class="capa capa-preta">
+                                A biblioteca<br>
+                                da<br>
+                                Meia-Noite
+                            </div>
+
+                            <button class="favorito">
+                                ♡
+                            </button>
+
+                            <h3>A biblioteca da Meia-Noite</h3>
+                            <p class="autor">Matt Haig</p>
+
+                            <div class="avaliacao">
+                                ★ 4.6 <span>(18.9k)</span>
+                            </div>
+
+                            <span class="tag">Fantasia</span>
+
+                        </article>
+
+
+                        <!-- LIVRO 4 -->
+                        <article class="livro">
+
+                            <div class="capa capa-creme">
+                                Sapiens
+                            </div>
+
+                            <button class="favorito">
+                                ♡
+                            </button>
+
+                            <h3>Sapiens</h3>
+                            <p class="autor">Yuval Noah Harari</p>
+
+                            <div class="avaliacao">
+                                ★ 4.6 <span>(34.2k)</span>
+                            </div>
+
+                            <span class="tag">Não ficção</span>
+
+                        </article>
+
+
+                        <!-- LIVRO 5 -->
+                        <article class="livro">
+
+                            <div class="capa capa-vermelha">
+                                1984
+                            </div>
+
+                            <button class="favorito">
+                                ♡
+                            </button>
+
+                            <h3>1984</h3>
+                            <p class="autor">George Orwell</p>
+
+                            <div class="avaliacao">
+                                ★ 4.5 <span>(28.7k)</span>
+                            </div>
+
+                            <span class="tag">Distopia</span>
+
+                        </article>
+
+
+                        <!-- LIVRO 6 -->
+                        <article class="livro">
+
+                            <div class="capa capa-amarela">
+                                O poder<br>
+                                do hábito
+                            </div>
+
+                            <button class="favorito">
+                                ♡
+                            </button>
+
+                            <h3>O poder do hábito</h3>
+                            <p class="autor">Charles Duhigg</p>
+
+                            <div class="avaliacao">
+                                ★ 4.5 <span>(20.3k)</span>
+                            </div>
+
+                            <span class="tag">Não ficção</span>
+
+                        </article>
+
+
+                        <!-- LIVRO 7 -->
+                        <article class="livro">
+
+                            <div class="capa capa-preta">
+                                Verity
+                            </div>
+
+                            <button class="favorito">
+                                ♡
+                            </button>
+
+                            <h3>Verity</h3>
+                            <p class="autor">Colleen Hoover</p>
+
+                            <div class="avaliacao">
+                                ★ 4.4 <span>(26.1k)</span>
+                            </div>
+
+                            <span class="tag">Suspense</span>
+
+                        </article>
+
+
+                        <!-- LIVRO 8 -->
+                        <article class="livro">
+
+                            <div class="capa capa-laranja">
+                                TORTO<br>
+                                ARADO
+                            </div>
+
+                            <button class="favorito">
+                                ♡
+                            </button>
+
+                            <h3>Torto Arado</h3>
+                            <p class="autor">Itamar Vieira Junior</p>
+
+                            <div class="avaliacao">
+                                ★ 4.5 <span>(18.7k)</span>
+                            </div>
+
+                            <span class="tag">Literatura brasileira</span>
+
+                        </article>
+
+
+                        <!-- LIVRO 9 -->
+                        <article class="livro">
+
+                            <div class="capa capa-azul">
+                                A GAROTA<br>
+                                DO LAGO
+                            </div>
+
+                            <button class="favorito">
+                                ♡
+                            </button>
+
+                            <h3>A garota do lago</h3>
+                            <p class="autor">Charlie Donlea</p>
+
+                            <div class="avaliacao">
+                                ★ 4.2 <span>(14.3k)</span>
+                            </div>
+
+                            <span class="tag">Suspense</span>
+
+                        </article>
+
+
+                        <!-- LIVRO 10 -->
+                        <article class="livro">
+
+                            <div class="capa capa-amarela">
+                                CLARO<br>
+                                COMO<br>
+                                O MAR
+                            </div>
+
+                            <button class="favorito">
+                                ♡
+                            </button>
+
+                            <h3>O lado bom da vida</h3>
+                            <p class="autor">Matthew Quick</p>
+
+                            <div class="avaliacao">
+                                ★ 4.3 <span>(16.8k)</span>
+                            </div>
+
+                            <span class="tag">Drama</span>
+
+                        </article>
+
+
+                        <!-- LIVRO 11 -->
+                        <article class="livro">
+
+                            <div class="capa capa-preta">
+                                Harry Potter
+                            </div>
+
+                            <button class="favorito">
+                                ♡
+                            </button>
+
+                            <h3>Harry Potter e a pedra filosofal</h3>
+                            <p class="autor">J.K. Rowling</p>
+
+                            <div class="avaliacao">
+                                ★ 4.7 <span>(42.6k)</span>
+                            </div>
+
+                            <span class="tag">Fantasia</span>
+
+                        </article>
+
+
+                        <!-- LIVRO 12 -->
+                        <article class="livro">
+
+                            <div class="capa capa-azul">
+                                A culpa é<br>
+                                das estrelas
+                            </div>
+
+                            <button class="favorito">
+                                ♡
+                            </button>
+
+                            <h3>A culpa é das estrelas</h3>
+                            <p class="autor">John Green</p>
+
+                            <div class="avaliacao">
+                                ★ 4.6 <span>(37.2k)</span>
+                            </div>
+
+                            <span class="tag">Romance</span>
+
+                        </article>
+
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <!-- RODAPÉ -->
+    <footer>
+        <p>© 2026 Illuminius— Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>

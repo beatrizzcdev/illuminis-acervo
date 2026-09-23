@@ -5,24 +5,206 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="homepage.css">
     <title>Illuminis</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
+
 <body>
     <nav class="barra-navegacao">
-        <div class="logo">Illuminis</div>
+        <div class="logo">ILLUMINIS
+            <i class="fa-solid fa-book-quran" style="color: rgb(255, 255, 255);"></i>
+        </div>
         <ul class="menu">
              <li><a href="Meus Livros">Meus Livros</a></li>
              <li><a href="Acervo">Acervo</a></li>
              <li><a href="Em alta">Em Alta</a></li>
              <li><a href="Resenhas">Resenhas</a></li>
         </ul>
+        <i class="fa-solid fa-magnifying-glass" style="color: rgb(255, 255, 255);"></i>
         <i class="fa-solid fa-circle-user"></i>
-        <i class="fa-regular fa-magnifying-glass"></i>
     </nav>
-    <header>
+    <header class="hero">
         <h4>Boas-vindas, Usuário!👋</h4>
         <h1>Encontre sua próxima leitura</h1>
         <h4>Grandes histórias te esperam. Descubra, leia, compartilhe.</h4>
+        <div class="barra-pesquisa">
+            <input type="text" placeholder="Pesquisar por título, autor, gênero...">
+            <button>
+                <i class="fa-solid fa-magnifying-glass" style="color: rgb(255, 255, 255);"></i>
+            </button>
+        </div>
     </header>
-    
+
+    <section class="atalhos">
+        <a href="#">
+            <i class="fa-solid fa-book"></i>
+            <h3>Meus Livros</h3>
+            <span>Organize sua leitura</span>
+        </a>
+
+        <a href="#">
+            <i class="fa-solid fa-bookmark"></i>
+            <h3>Acervos</h3>
+            <span>Explore novos livros</span>
+        </a>
+
+        <a href="#">
+            <i class="fa-solid fa-fire"></i>
+            <h3>Em alta</h3>
+            <span>Os mais populares</span>
+        </a>
+
+        <a href="#">
+            <i class="fa-solid fa-book-open-reader"></i>
+            <h3>Resenhas</h3>
+            <span>Leia e compartilhe</span>
+        </a>
+    </section>
+
+    <main>
+        <section class="em-alta">
+
+            <div class="titulo-secao">
+                <h2><i class="fa-solid fa-fire"></i>Em Alta</h2>
+            </div>
+
+            <div class="livros">
+                
+                <div class="livro">
+                    <img src="shatterme.jpg" alt="capa de Estilhaça-me">
+
+                    <h3>Estilhaça-me</h3>
+                    <p>Tahereh Mafi</p>
+
+                    <span>⭐ 4.9</span>
+
+                    <small>Distopia</small>
+                </div>
+
+                <div class="livro">
+                    <img src="verity.jpg" alt="Capa de Verity">
+
+                <h3>Verity</h3>
+                <p>Colleen Hoover</p>
+
+                <span>⭐ 4.8</span>
+
+                <small>Suspense</small>
+            </div>
+
+                <div class="livro">
+                    <img src="oacordo.jpg" alt="Capa de O Acordo">
+
+                    <h3>O Acordo</h3>
+                    <p>Elle Kennedy</p>
+
+                    <span>⭐ 4.5</span>
+
+                    <small>Romance</small>
+                </div>
+
+                <div class="livro">
+                    <img src="aestranha.jpg" alt="Capa de A estranha na cama">
+
+                    <h3>A Estranha na Cama</h3>
+                    <p>Raphael Montes</p>
+                    
+                    <span>⭐ 4.2</span>
+
+                    <small>Thriller</small>
+                </div>
+
+                <div class="livro">
+                    <img src="opequenoprincipe.jpg" alt="Capa de O Pequeno Príncipe">
+
+                    <h3>O Pequeno Príncipe</h3>
+                    <p>Antoine de Saint-Exupéry</p>
+
+                    <span>⭐ 4.7</span>
+
+                    <small>Clássico</small>
+                </div>
+
+                <div class="livro">
+                    <img src="abiblioteca.jpg" alt="Capa de A Biblioteca da Meia-Noite">
+
+                    <h3>A Biblioteca da Meia-Noite</h3>
+                    <p>Matt Haig</p>
+
+                    <span>⭐ 4.7</span>
+
+                    <small>Ficção</small>
+                </div>
+            </div>
+        </section>
+
+        <section class="seu-acervo">
+            
+        <div class="titulo-secao">
+            <h2>📖 Seu acervo</h2>
+        </div>
+
+        <div class="livros">
+
+        <div class="livro">
+            <img src="verity.jpg" alt="Capa de Verity">
+
+            <h3>Verity</h3>
+            <p>Colleen Hoover</p>
+
+            <small>✓ Lendo</small>
+        </div>
+
+        <div class="livro">
+            <img src="torto-arado.jpg" alt="Capa de Torto Arado">
+
+            <h3>Torto Arado</h3>
+            <p>Itamar Vieira Junior</p>
+
+            <small>✓ Lido</small>
+        </div>
+
+
+        <div class="livro">
+            <img src="1984.jpg" alt="Capa de 1984">
+
+            <h3>1984</h3>
+            <p>George Orwell</p>
+
+            <small>♡ Quero ler</small>
+        </div>
+
+
+        <div class="livro">
+            <img src="poder-do-habito.jpg" alt="Capa de O Poder do Hábito">
+
+            <h3>O Poder do Hábito</h3>
+            <p>Charles Duhigg</p>
+
+            <small>✓ Lendo</small>
+        </div>
+
+
+        <div class="livro">
+            <img src="sapiens.jpg" alt="Capa de Sapiens">
+
+            <h3>Sapiens</h3>
+            <p>Yuval Noah Harari</p>
+
+            <small>✓ Lido</small>
+        </div>
+
+
+        <div class="livro">
+            <img src="biblioteca-meia-noite.jpg" alt="Capa de A Biblioteca da Meia-Noite">
+
+            <h3>A Biblioteca da Meia-Noite</h3>
+            <p>Matt Haig</p>
+
+            <small>♡ Quero ler</small>
+        </div>
+
+        </div>
+    </section>
+    </main>
 </body>
 </html>

@@ -1,9 +1,490 @@
 * {
-    padding: 0%;
-    margin: 0%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f1e9;
+    color: #3f2a1e;
+}
+
+
 .barra-navegacao {
-    background-color:#61422F;
-    
+    height: 70px;
+
+    background-color: #765036;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 60px;
+
+    color: white;
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    font-family: Georgia, serif;
+    font-size: 25px;
+    font-weight: bold;
+
+    color: white;
+}
+
+
+.menu {
+    display: flex;
+    align-items: center;
+
+    gap: 35px;
+
+    list-style: none;
+
+    margin-left: 80px;
+}
+
+.menu a {
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 15px;
+
+    transition: 0.2s;
+}
+
+.menu a:hover {
+    opacity: 0.7;
+}
+
+
+.barra-navegacao > i {
+    font-size: 20px;
+
+    margin-left: 25px;
+
+    cursor: pointer;
+}
+
+
+.barra-navegacao > i:first-of-type {
+    margin-left: auto;
+}
+
+
+
+.hero {
+    min-height: 340px;
+
+    background-image:
+        linear-gradient(
+            rgba(63, 42, 30, 0.45),
+            rgba(63, 42, 30, 0.45)
+        ),
+        url("banner.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 50px 80px;
+
+    color: white;
+}
+
+
+
+.hero h4:first-child {
+    font-size: 15px;
+    font-weight: normal;
+
+    margin-bottom: 10px;
+}
+
+
+
+.hero h1 {
+    font-family: Georgia, serif;
+
+    font-size: 45px;
+
+    margin-bottom: 12px;
+
+    max-width: 600px;
+}
+
+
+.hero h4:nth-of-type(2) {
+    font-size: 15px;
+    font-weight: normal;
+
+    margin-bottom: 25px;
+}
+
+
+.barra-pesquisa {
+    width: 500px;
+    height: 48px;
+
+    background-color: white;
+
+    border-radius: 25px;
+
+    display: flex;
+    align-items: center;
+
+    padding-left: 18px;
+
+    overflow: hidden;
+}
+
+
+.barra-pesquisa input {
+    flex: 1;
+
+    height: 100%;
+
+    border: none;
+    outline: none;
+
+    padding: 0 12px;
+
+    font-size: 14px;
+
+    color: #3f2a1e;
+}
+
+.barra-pesquisa input::placeholder {
+    color: #9b8c80;
+}
+
+
+.barra-pesquisa button {
+    width: 45px;
+    height: 45px;
+
+    margin-right: 2px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background-color: #765036;
+
+    color: white;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.barra-pesquisa button:hover {
+    background-color: #5f3e28;
+}
+
+
+.atalhos {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 18px;
+
+    padding: 30px 60px;
+}
+
+
+.atalhos a {
+    min-height: 100px;
+
+    background-color: #fffaf5;
+
+    border: 1px solid #e4d8cc;
+
+    border-radius: 12px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+
+    padding: 20px;
+
+    text-decoration: none;
+
+    color: #3f2a1e;
+
+    transition: 0.2s;
+}
+
+
+.atalhos a:hover {
+    transform: translateY(-3px);
+
+    box-shadow: 0 5px 15px rgba(63, 42, 30, 0.10);
+}
+
+
+.atalhos i {
+    font-size: 23px;
+
+    color: #765036;
+
+    margin-bottom: 10px;
+}
+
+
+.atalhos h3 {
+    font-size: 16px;
+
+    margin-bottom: 5px;
+}
+
+
+.atalhos span {
+    font-size: 13px;
+
+    color: #8c7b6d;
+}
+
+
+main {
+    padding: 0 60px 60px;
+}
+
+
+.titulo-secao {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 18px;
+}
+
+.titulo-secao h2 {
+    font-family: Georgia, serif;
+
+    font-size: 24px;
+
+    color: #3f2a1e;
+}
+
+.titulo-secao h2 i {
+    margin-right: 8px;
+
+    color: #765036;
+
+    font-size: 20px;
+}
+
+
+.livros {
+    display: grid;
+
+    grid-template-columns: repeat(6, 1fr);
+
+    gap: 18px;
+}
+
+
+.livro {
+    background-color: #fffaf5;
+
+    border: 1px solid #e4d8cc;
+
+    border-radius: 10px;
+
+    padding: 10px;
+
+    overflow: hidden;
+
+    transition: 0.2s;
+}
+
+
+.livro:hover {
+    transform: translateY(-4px);
+
+    box-shadow: 0 7px 18px rgba(63, 42, 30, 0.12);
+}
+
+
+.livro img {
+    width: 100%;
+
+    height: 220px;
+
+    object-fit: cover;
+
+    border-radius: 7px;
+
+    display: block;
+
+    margin-bottom: 12px;
+}
+
+
+.livro h3 {
+    font-size: 15px;
+
+    margin-bottom: 5px;
+
+    color: #3f2a1e;
+}
+
+
+
+.livro p {
+    font-size: 12px;
+
+    color: #8c7b6d;
+
+    margin-bottom: 8px;
+}
+
+
+
+.livro > span {
+    display: block;
+
+    font-size: 12px;
+
+    margin-bottom: 8px;
+}
+
+
+.livro small {
+    display: inline-block;
+
+    font-size: 11px;
+
+    color: #765036;
+
+    background-color: #eee1d4;
+
+    border-radius: 15px;
+
+    padding: 4px 8px;
+}
+
+
+.em-alta {
+    margin-bottom: 45px;
+}
+
+
+.seu-acervo {
+    margin-bottom: 45px;
+}
+
+
+@media (max-width: 1100px) {
+
+    .livros {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .atalhos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 750px) {
+
+    .barra-navegacao {
+        padding: 0 25px;
+    }
+
+    .menu {
+        gap: 15px;
+
+        margin-left: 30px;
+    }
+
+    .menu a {
+        font-size: 13px;
+    }
+
+    .hero {
+        padding: 40px 30px;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    .barra-pesquisa {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .atalhos {
+        padding: 25px;
+    }
+
+    main {
+        padding: 0 25px 40px;
+    }
+
+}
+
+
+@media (max-width: 550px) {
+
+    .barra-navegacao {
+        height: auto;
+
+        padding: 18px;
+
+        flex-wrap: wrap;
+    }
+
+    .menu {
+        order: 3;
+
+        width: 100%;
+
+        justify-content: center;
+
+        margin: 15px 0 0;
+    }
+
+    .hero {
+        padding: 35px 20px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .atalhos {
+        grid-template-columns: 1fr;
+
+        padding: 20px;
+    }
+
+    main {
+        padding: 0 20px 30px;
+    }
+
+    .livros {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .livro img {
+        height: 200px;
+    }
+
 }

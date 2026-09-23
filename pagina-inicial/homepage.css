@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -5,7 +8,6 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
     background-color: #f7f1e9;
     color: #3f2a1e;
 }
@@ -13,28 +15,33 @@ body {
 
 .barra-navegacao {
     height: 70px;
-
     background-color: #765036;
-
     display: flex;
+
     align-items: center;
-
     padding: 0 60px;
-
     color: white;
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: medium;
 }
 
 
 .logo {
     display: flex;
-    align-items: center;
-    gap: 8px;
+    align-items: space-between;
+    gap: 10px;
 
     font-family: Georgia, serif;
     font-size: 25px;
     font-weight: bold;
 
     color: white;
+}
+
+.logo i {
+    font-size: 25px;
+    margin-left: auto;
 }
 
 
@@ -87,7 +94,7 @@ body {
             rgba(63, 42, 30, 0.45),
             rgba(63, 42, 30, 0.45)
         ),
-        url("banner.jpg");
+        url("https://i.pinimg.com/1200x/a4/59/77/a45977900a09a06bc02d264fea173423.jpg");
 
     background-size: cover;
     background-position: center;
@@ -113,12 +120,9 @@ body {
 
 
 .hero h1 {
-    font-family: Georgia, serif;
-
+    font-family: Libre Baskerville, serif;
     font-size: 45px;
-
     margin-bottom: 12px;
-
     max-width: 600px;
 }
 
@@ -134,16 +138,12 @@ body {
 .barra-pesquisa {
     width: 500px;
     height: 48px;
-
     background-color: white;
 
     border-radius: 25px;
-
     display: flex;
     align-items: center;
-
     padding-left: 18px;
-
     overflow: hidden;
 }
 
@@ -152,14 +152,11 @@ body {
     flex: 1;
 
     height: 100%;
-
     border: none;
     outline: none;
 
     padding: 0 12px;
-
     font-size: 14px;
-
     color: #3f2a1e;
 }
 
@@ -171,19 +168,12 @@ body {
 .barra-pesquisa button {
     width: 45px;
     height: 45px;
-
     margin-right: 2px;
-
     border: none;
-
     border-radius: 50%;
-
     background-color: #765036;
-
     color: white;
-
     cursor: pointer;
-
     transition: 0.2s;
 }
 
@@ -245,7 +235,6 @@ body {
 
 .atalhos h3 {
     font-size: 16px;
-
     margin-bottom: 5px;
 }
 
@@ -290,24 +279,17 @@ main {
 
 .livros {
     display: grid;
-
     grid-template-columns: repeat(6, 1fr);
-
     gap: 18px;
 }
 
 
 .livro {
     background-color: #fffaf5;
-
     border: 1px solid #e4d8cc;
-
     border-radius: 10px;
-
     padding: 10px;
-
     overflow: hidden;
-
     transition: 0.2s;
 }
 

@@ -356,13 +356,15 @@ main {
 }
 
 footer {
-    background-color: #603a27;
+    background: #5b3825;
+
     color: white;
+
     text-align: center;
-    width: 100%;
-    margin: 0;
-    padding: 20px;
-    box-sizing: border-box;
+
+    padding: 15px;
+
+    font-size: 11px;
 }
 
 

@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Meus Livros</title>
+
+    <script src="https://kit.fontawesome.com/1624d61130.js"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="meus-livros.css">
+</head>
+
+<body>
+
+
+    <header class="cabecalho">
+
+        <div class="logo">
+            <i class="fa-solid fa-book-quran" style="color: rgb(255, 255, 255);"></i>
+            <span>Illuminis</span>
+        </div>
+
+        <nav class="menu-topo">
+
+            <a href="#" class="ativo">Meus Livros</a>
+
+            <a href="#">Acervos</a>
+
+            <a href="#">Em Alta</a>
+
+            <a href="#">Resenhas</a>
+
+        </nav>
+
+        <div class="acoes-topo">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <i class="fa-solid fa-bell"></i>
+
+            <div class="perfil-topo">
+                <i class="fa-solid fa-user"></i>
+            </div>
+
+            <i class="fa-solid fa-chevron-down"></i>
+
+        </div>
+
+    </header>
+
+    <div class="layout">
+
+
+        <aside class="sidebar">
+
+            <div class="perfil">
+
+                <div class="avatar">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+
+                <div class="perfil-texto">
+                    <strong>Larissa</strong>
+                    <span>Leitora</span>
+                </div>
+
+                <i class="fa-solid fa-pen"></i>
+
+            </div>
+
+
+            <nav class="menu-lateral">
+
+                <a href="#" class="ativo">
+
+                    <i class="fa-solid fa-book-open"></i>
+
+                    <span>Meus Livros</span>
+
+                </a>
+
+                <a href="#">
+
+                    <i class="fa-solid fa-book-open-reader"></i>
+
+                    <span>Minha estante</span>
+
+                </a>
+
+                <a href="#">
+
+                    <i class="fa-regular fa-heart"></i>
+
+                    <span>Favoritos</span>
+
+                </a>
+
+                <a href="#">
+
+                    <i class="fa-solid fa-gear"></i>
+
+                    <span>Configurações</span>
+
+                </a>
+
+            </nav>
+
+
+            <div class="frase-sidebar">
+
+                <i class="fa-solid fa-book-bookmark"></i>
+                <p>
+                    “Um livro é uma porta
+                    para outro mundo.”
+                </p>
+
+            </div>
+
+        </aside>
+
+
+        <!-- =========================
+             CONTEÚDO
+        ========================== -->
+
+        <main class="conteudo">
+
+
+            <!-- =========================
+                 BANNER
+            ========================== -->
+
+            <section class="banner">
+
+                <img src="imagem/tentativa.png" alt="Livros">
+
+                <div class="banner-texto">
+
+                    <span>MEUS LIVROS</span>
+
+                    <h1>
+                        Sua estante,<br>
+                        seu ritmo.
+                    </h1>
+
+                    <p>
+                        Aqui estão todos os livros que você adicionou,<br>
+                        leu, está lendo ou quer ler.
+                    </p>
+
+                </div>
+
+                <div class="banner-frase">
+                    Ilumine<br>
+                    cada vez mais,<br>
+                    suas Historias.
+                    <span>♥</span>
+                </div>
+
+            </section>
+
+
+            <!-- =========================
+                 CATEGORIAS
+            ========================== -->
+
+            <nav class="categorias">
+
+                <a href="#" class="ativa">
+                    Todos
+                </a>
+
+                <a href="#">
+                    <i class="fa-solid fa-pen-to-square"></i>
+                    Lendo
+                </a>
+
+                <a href="#">
+                    <i class="fa-solid fa-check"></i>
+                    Lidos
+                </a>
+
+                <a href="#">
+                    <i class="fa-regular fa-bookmark"></i>
+                    Quero ler
+                </a>
+
+                <a href="#">
+                    <i class="fa-regular fa-heart"></i>
+                    Favoritos
+                </a>
+
+            </nav>
+
+
+            <!-- =========================
+                 BUSCA E FILTROS
+            ========================== -->
+
+            <section class="ferramentas">
+
+                <div class="campo-pesquisa">
+
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                    <input
+                        type="text"
+                        placeholder="Buscar por título, autor ou gênero..."
+                    >
+
+                </div>
+
+
+                <button class="botao-filtro">
+
+                    <i class="fa-solid fa-sliders"></i>
+
+                    <span>Filtros</span>
+
+                </button>
+
+
+                <button class="ordenar">
+
+                    <span>
+                        Ordenar por:
+                        <strong>Mais recentes</strong>
+                    </span>
+
+                    <i class="fa-solid fa-chevron-down"></i>
+
+                </button>
+
+            </section>
+
+
+            <!-- =========================
+                 LENDO AGORA
+            ========================== -->
+
+            <section class="livros-section">
+
+                <div class="titulo-section">
+
+                    <div class="titulo">
+
+                        <i class="fa-solid fa-book-open"></i>
+
+                        <h2>Lendo agora</h2>
+
+                    </div>
+
+                    <a href="#">Ver todos →</a>
+
+                </div>
+
+
+                <div class="livro-grid">
+
+                    <article class="livro-card">
+
+                        <div class="capa-livro">
+
+                            <img src="imagem/Livro É Assim que começa.jpg"
+                                alt="É assim que começa">
+
+                            <button class="favorito">
+                                <i class="fa-solid fa-bookmark"></i>
+                            </button>
+
+                        </div>
+
+                        <h3>É assim que começa</h3>
+
+                        <p class="autor">Colleen Hoover</p>
+
+                        <div class="progresso-container">
+
+                            <div class="barra">
+                                <div class="progresso progresso-42"></div>
+                            </div>
+
+                            <span>42%</span>
+
+                        </div>
+
+                        <span class="status">
+                            ✓ Lendo
+                        </span>
+
+                        <div class="acoes">
+
+                            <button>
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+
+                            <button>
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </button>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="livro-card">
+
+                        <div class="capa-livro">
+
+                            <img src="imagem/lido_ novembro 2023.jpg"
+                                alt="O Pequeno Príncipe">
+
+                            <button class="favorito">
+                                <i class="fa-regular fa-bookmark"></i>
+                            </button>
+
+                        </div>
+
+                        <h3>O Pequeno Príncipe</h3>
+
+                        <p class="autor">
+                            Antoine de Saint-Exupéry
+                        </p>
+
+                        <div class="progresso-container">
+
+                            <div class="barra">
+                                <div class="progresso progresso-75"></div>
+                            </div>
+
+                            <span>75%</span>
+
+                        </div>
+
+                        <span class="status">
+                            ✓ Lendo
+                        </span>
+
+                        <div class="acoes">
+
+                            <button>
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+
+                            <button>
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </button>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="livro-card">
+
+                        <div class="capa-livro">
+
+                            <img src="imagem/baixados (1).jpg"
+                                alt="A Biblioteca da Meia-Noite">
+
+                            <button class="favorito">
+                                <i class="fa-regular fa-bookmark"></i>
+                            </button>
+
+                        </div>
+
+                        <h3>A Biblioteca da Meia-Noite</h3>
+
+                        <p class="autor">Matt Haig</p>
+
+                        <div class="progresso-container">
+
+                            <div class="barra">
+                                <div class="progresso progresso-30"></div>
+                            </div>
+
+                            <span>30%</span>
+
+                        </div>
+
+                        <span class="status">
+                            ✓ Lendo
+                        </span>
+
+                        <div class="acoes">
+
+                            <button>
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+
+                            <button>
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </button>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="livro-card">
+
+                        <div class="capa-livro">
+
+                            <img src="imagem/Verity.jpg"
+                                alt="Verity">
+
+                            <button class="favorito">
+                                <i class="fa-regular fa-bookmark"></i>
+                            </button>
+
+                        </div>
+
+                        <h3>Verity</h3>
+
+                        <p class="autor">Colleen Hoover</p>
+
+                        <div class="progresso-container">
+
+                            <div class="barra">
+                                <div class="progresso progresso-15"></div>
+                            </div>
+
+                            <span>15%</span>
+
+                        </div>
+
+                        <span class="status">
+                            ✓ Lendo
+                        </span>
+
+                        <div class="acoes">
+
+                            <button>
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+
+                            <button>
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </button>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+
+            <!-- =========================
+                 LIDOS RECENTEMENTE
+            ========================== -->
+
+            <section class="livros-section">
+
+                <div class="titulo-section">
+
+                    <div class="titulo">
+
+                        <i class="fa-solid fa-clock"></i>
+
+                        <h2>Lidos recentemente</h2>
+
+                    </div>
+
+                    <a href="#">Ver todos →</a>
+
+                </div>
+
+
+                <div class="livro-grid">
+
+                    <article class="livro-card">
+
+                        <div class="capa-livro">
+
+                            <img src="imagem/1984 - George Orwell.jpg" alt="1984">
+
+                            <button class="favorito">
+                                <i class="fa-regular fa-bookmark"></i>
+                            </button>
+
+                        </div>
+
+                        <h3>1984</h3>
+
+                        <p class="autor">George Orwell</p>
+
+                        <span class="status">✓ Lido</span>
+
+                        <div class="acoes">
+
+                            <button>
+                                <i class="fa-solid fa-heart"></i>
+                            </button>
+
+                            <button>
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </button>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="livro-card">
+
+                        <div class="capa-livro">
+
+                            <img src="imagem/Torto Arado.jpg"
+                                alt="Torto Arado">
+
+                            <button class="favorito">
+                                <i class="fa-regular fa-bookmark"></i>
+                            </button>
+
+                        </div>
+
+                        <h3>Torto Arado</h3>
+
+                        <p class="autor">
+                            Itamar Vieira Junior
+                        </p>
+
+                        <span class="status">✓ Lido</span>
+
+                        <div class="acoes">
+
+                            <button>
+                                <i class="fa-solid fa-heart"></i>
+                            </button>
+
+                            <button>
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </button>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="livro-card">
+
+                        <div class="capa-livro">
+
+                            <img src="imagem/baixados (2).jpg"
+                                alt="O Poder do Hábito">
+
+                            <button class="favorito">
+                                <i class="fa-regular fa-bookmark"></i>
+                            </button>
+
+                        </div>
+
+                        <h3>O Poder do Hábito</h3>
+
+                        <p class="autor">
+                            Charles Duhigg
+                        </p>
+
+                        <span class="status">✓ Lido</span>
+
+                        <div class="acoes">
+
+                            <button>
+                                <i class="fa-solid fa-heart"></i>
+                            </button>
+
+                            <button>
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </button>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="livro-card">
+
+                        <div class="capa-livro">
+
+                            <img src="imagem/baixados (3).jpg"
+                                alt="Sapiens">
+
+                            <button class="favorito">
+                                <i class="fa-regular fa-bookmark"></i>
+                            </button>
+
+                        </div>
+
+                        <h3>Sapiens</h3>
+
+                        <p class="autor">
+                            Yuval Noah Harari
+                        </p>
+
+                        <span class="status">✓ Lido</span>
+
+                        <div class="acoes">
+
+                            <button>
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+
+                            <button>
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </button>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+
+            <!-- =========================
+                 QUERO LER
+            ========================== -->
+
+            <section class="livros-section">
+
+                <div class="titulo-section">
+
+                    <div class="titulo">
+
+                        <i class="fa-regular fa-bookmark"></i>
+
+                        <h2>Quero ler</h2>
+
+                    </div>
+
+                    <a href="#">Ver todos →</a>
+
+                </div>
+
+
+                <div class="livro-grid compacto">
+
+                    <article class="livro-card pequeno">
+
+                        <img src="imagem/baixados (1).jpg"
+                            alt="A Biblioteca da Meia-Noite">
+
+                        <div>
+
+                            <h3>A Biblioteca da Meia-Noite</h3>
+
+                            <p class="autor">Matt Haig</p>
+
+                            <span class="status">
+                                ♡ Quero ler
+                            </span>
+
+                        </div>
+
+                        <i class="fa-regular fa-bookmark"></i>
+
+                    </article>
+
+
+                    <article class="livro-card pequeno">
+
+                        <img src="imagem/dom.jpg"
+                            alt="Dom Casmurro">
+
+                        <div>
+
+                            <h3>Dom Casmurro</h3>
+
+                            <p class="autor">
+                                Machado de Assis
+                            </p>
+
+                            <span class="status">
+                                ♡ Quero ler
+                            </span>
+
+                        </div>
+
+                        <i class="fa-regular fa-bookmark"></i>
+
+                    </article>
+
+
+                    <article class="livro-card pequeno">
+
+                        <img src="imagem/Livro Hábitos Atômicos, James Clear.jpg"
+                            alt="Hábitos Atômicos">
+
+                        <div>
+
+                            <h3>Hábitos Atômicos</h3>
+
+                            <p class="autor">
+                                James Clear
+                            </p>
+
+                            <span class="status">
+                                ♡ Quero ler
+                            </span>
+
+                        </div>
+
+                        <i class="fa-regular fa-bookmark"></i>
+
+                    </article>
+
+
+                    <article class="livro-card pequeno">
+
+                        <img src="imagem/O Gato que amava livros 🐾.jpg"
+                            alt="O Gato que Amava Livros">
+
+                        <div>
+
+                            <h3>O Gato que Amava Livros</h3>
+
+                            <p class="autor">
+                                Sosuke Natsukawa
+                            </p>
+
+                            <span class="status">
+                                ♡ Quero ler
+                            </span>
+
+                        </div>
+
+                        <i class="fa-regular fa-bookmark"></i>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+
+            <!-- =========================
+                 FAVORITOS
+            ========================== -->
+
+            <section class="livros-section">
+
+                <div class="titulo-section">
+
+                    <div class="titulo">
+
+                        <i class="fa-solid fa-heart"></i>
+
+                        <h2>Favoritos</h2>
+
+                    </div>
+
+                    <a href="#">Ver todos →</a>
+
+                </div>
+
+
+                <div class="livro-grid compacto">
+
+                    <article class="livro-card pequeno">
+
+                        <img src="imagem/Categoria_ Livros - CAPA Sub-categoria_ A culpa é das estrelas - John Green.jpg"
+                            alt="A Culpa é das Estrelas">
+
+                        <div>
+
+                            <h3>A Culpa é das Estrelas</h3>
+
+                            <p class="autor">John Green</p>
+
+                            <span class="status favorito-status">
+                                ♥ Favorito
+                            </span>
+
+                        </div>
+
+                        <i class="fa-regular fa-bookmark"></i>
+
+                    </article>
+
+
+                    <article class="livro-card pequeno">
+
+                        <img src="imagem/Quatro romances para pensar o Brasil moderno.jpg"
+                            alt="Cidade de Deus">
+
+                        <div>
+
+                            <h3>Cidade de Deus</h3>
+
+                            <p class="autor">Paulo Lins</p>
+
+                            <span class="status favorito-status">
+                                ♥ Favorito
+                            </span>
+
+                        </div>
+
+                        <i class="fa-regular fa-bookmark"></i>
+
+                    </article>
+
+
+                    <article class="livro-card pequeno">
+
+                        <img src="imagem/Os 15 melhores livros para jovens - Anne Frank - Escola Educação.jpg"
+                            alt="O Diário de Anne Frank">
+
+                        <div>
+
+                            <h3>O Diário de Anne Frank</h3>
+
+                            <p class="autor">Anne Frank</p>
+
+                            <span class="status favorito-status">
+                                ♥ Favorito
+                            </span>
+
+                        </div>
+
+                        <i class="fa-regular fa-bookmark"></i>
+
+                    </article>
+
+
+                    <article class="livro-card pequeno">
+
+                        <img src="imagem/1984 - George Orwell.jpg"
+                            alt="1984">
+
+                        <div>
+
+                            <h3>1984</h3>
+
+                            <p class="autor">George Orwell</p>
+
+                            <span class="status favorito-status">
+                                ♥ Favorito
+                            </span>
+
+                        </div>
+
+                        <i class="fa-regular fa-bookmark"></i>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <footer>
+        <p>© 2026 Illuminius— Todos os direitos reservados.</p>
+    </footer>
+
+
+</body>
+</html>

@@ -14,77 +14,104 @@ body {
     padding: 0;
 }
 
+.topo {
+    height: 58px;
 
-.barra-navegacao {
-    height: 70px;
-    background-color: #765036;
-    display: flex;
-
-    align-items: center;
-    padding: 0 60px;
+    background: #5b3825;
     color: white;
 
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: medium;
+    display: flex;
+    align-items: center;
+
+    padding: 0 38px;
+
+    gap: 70px;
 }
 
 
+/* LOGO */
+
 .logo {
     display: flex;
-    align-items: space-between;
+    align-items: center;
+
     gap: 10px;
 
-    font-family: Georgia, serif;
-    font-size: 25px;
-    font-weight: bold;
+    font-family: Georgia, "Times New Roman", serif;
 
-    color: white;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 .logo i {
     font-size: 25px;
-    margin-left: auto;
 }
 
 
-.menu {
+/* MENU */
+
+.menu-principal {
+    display: flex;
+
+    height: 100%;
+
+    gap: 35px;
+}
+
+.menu-principal a {
     display: flex;
     align-items: center;
 
-    gap: 35px;
+    font-family: Georgia, "Times New Roman", serif;
 
-    list-style: none;
+    font-size: 13px;
 
-    margin-left: 80px;
-}
+    position: relative;
 
-.menu a {
     color: white;
 
     text-decoration: none;
-
-    font-size: 15px;
-
-    transition: 0.2s;
-}
-
-.menu a:hover {
-    opacity: 0.7;
 }
 
 
-.barra-navegacao > i {
-    font-size: 20px;
+/* ITEM ATIVO */
 
-    margin-left: 25px;
+.menu-principal a.ativo::after {
+    content: "";
+
+    position: absolute;
+
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    height: 4px;
+
+    background: #e9a15a;
+
+    border-radius: 5px 5px 0 0;
+}
+
+
+/* ÍCONES DA DIREITA */
+
+.acoes-topo {
+    margin-left: auto;
+
+    display: flex;
+    align-items: center;
+
+    gap: 25px;
+
+    font-size: 19px;
+}
+
+.acoes-topo i {
+    color: white;
 
     cursor: pointer;
 }
 
-
-.barra-navegacao > i:first-of-type {
-    margin-left: auto;
-}
 
 
 
@@ -355,20 +382,6 @@ main {
     margin-bottom: 45px;
 }
 
-footer {
-    background: #5b3825;
-
-    color: white;
-
-    text-align: center;
-
-    padding: 15px;
-
-    font-size: 11px;
-}
-
-
-
 @media (max-width: 1100px) {
 
     .livros {
@@ -468,4 +481,16 @@ footer {
         height: 200px;
     }
 
+}
+
+footer {
+    background: #5b3825;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 15px;
+
+    font-size: 11px;
 }

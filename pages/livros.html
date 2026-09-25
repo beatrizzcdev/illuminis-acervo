@@ -7,49 +7,45 @@
 
     <title>Meus Livros</title>
 
-    <script src="https://kit.fontawesome.com/1624d61130.js"
-        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
     <link rel="stylesheet" href="../css/meus-livros.css">
 </head>
 
 <body>
 
+<header class="topo">
 
-    <header class="cabecalho">
+    <div class="logo">
+        <a href="index.html">
+        <i class="fa-solid fa-book-quran"></i>
+        <span>Illuminis</span>
+        </a>
+    </div>
 
-        <div class="logo">
-            <i class="fa-solid fa-book-quran" style="color: rgb(255, 255, 255);"></i>
-            <span>Illuminis</span>
-        </div>
+    <nav class="menu-principal">
+        <a href="livros.html" class="ativo">
+            Meus Livros
+        </a>
+        <a href="acervo.html">
+            Acervos
+        </a>
+        <a href="#">
+            Em Alta
+        </a>
+        <a href="#">
+            Resenhas
+        </a>
+    </nav>
 
-        <nav class="menu-topo">
+    <div class="acoes-topo">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <i class="fa-solid fa-bell"></i>
+        <i class="fa-solid fa-circle-user"></i>
+    </div>
 
-            <a href="#" class="ativo">Meus Livros</a>
+</header>
 
-            <a href="acervo.html">Acervos</a>
-
-            <a href="#">Em Alta</a>
-
-            <a href="#">Resenhas</a>
-
-        </nav>
-
-        <div class="acoes-topo">
-
-            <i class="fa-solid fa-magnifying-glass"></i>
-
-            <i class="fa-solid fa-bell"></i>
-
-            <div class="perfil-topo">
-                <i class="fa-solid fa-user"></i>
-            </div>
-
-            <i class="fa-solid fa-chevron-down"></i>
-
-        </div>
-
-    </header>
 
     <div class="layout">
 
@@ -74,36 +70,39 @@
 
             <nav class="menu-lateral">
 
-                <a href="#" class="ativo">
-
+                <a href="#">
                     <i class="fa-solid fa-book-open"></i>
-
                     <span>Meus Livros</span>
-
                 </a>
 
                 <a href="#">
-
-                    <i class="fa-solid fa-book-open-reader"></i>
-
+                    <i class="fa-solid fa-book"></i>
                     <span>Minha estante</span>
-
                 </a>
 
                 <a href="#">
-
                     <i class="fa-regular fa-heart"></i>
-
                     <span>Favoritos</span>
+                </a>
 
+                <a href="#" class="selecionado">
+                    <i class="fa-solid fa-book-open"></i>
+                    <span>Acervos</span>
                 </a>
 
                 <a href="#">
+                    <i class="fa-solid fa-fire"></i>
+                    <span>Em Alta</span>
+                </a>
 
+                <a href="#">
+                    <i class="fa-regular fa-comment"></i>
+                    <span>Resenhas</span>
+                </a>
+
+                <a href="#">
                     <i class="fa-solid fa-gear"></i>
-
                     <span>Configurações</span>
-
                 </a>
 
             </nav>
